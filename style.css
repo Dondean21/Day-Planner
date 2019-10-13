@@ -70,3 +70,13 @@ textarea{
   font-size: 20px;
   transition: all .3s ease-in-out;
 }
+
+input{
+  background: rgba(0, 0, 0, 0);
+  border: none;
+  outline: none;
+  width: 400px;
+  height: 60px;
+  float: left;
+
+}
