@@ -8,6 +8,9 @@ $(document).ready(function(){
     console.log(now.toString());
 
     var times = [9,10,11,12,13,14,15,16,17];
+    
+    
+    
 
    onLoad();
    planner();
@@ -37,22 +40,22 @@ $(document).ready(function(){
     });
    
 
-function planner(){
-    for(var i = 0; i < times.length; i++){
-        if (times[i] < now){
-            $(".time-block").addClass("past");
-        }else if( times[i] > now){
-          $(".time-block").addClass("future");
-        }else if( times[i] === now){
-            $(".time-block").addClass("present");
+
+    function planner(){
+        // var hour = 
+        for(var i = 0; i < times.length; i++){
+            if (times[i] < now){
+                $(".time-block").addClass("past");
+            }else if(times[i] > now){
+              $(".time-block").addClass("future");
+            }else if(times[i] === now){
+                $(".time-block").addClass("present");
+            };  
         };
-        
     };
-
-
-
-   
-};
+    
+    
+    
 
 
 
